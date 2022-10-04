@@ -6,7 +6,7 @@ The program uses the neo4j module to create a class Neo4jDB. While the main file
 
 ## Setup
 
-### This step is not necessary when the executable has already been created. The executable in this repository is only usable on linux machines. For other operating systems or in case of compatibility issues, please create the executable yourself!
+### This step is not necessary if the executable has already been created. The executable in this repository is only usable on linux machines and should work out of the box. However, for other operating systems or in case of compatibility issues, please create the executable yourself!
 
 First, create a virtual python environment, using - for example - pipenv. Here, it might be useful to make pipenv use the .lock file, since installing dependencies with the Pipfile itself may lead to errors.
 
