@@ -1,8 +1,12 @@
 # How to use
 
+## What the program does
+
+The program uses the neo4j module to create a class Neo4jDB. While the main file does not use this functionality, the class does support writing to the database from queries. In the current implementaion, the login credentials are read from the .env file and used to establish a connection to the database. The data is then stored internally as a pandas dataframe and a csv is saved in the Data folder.
+
 ## Setup
 
-### This step is not necessary when the executable has already been created.
+### This step is not necessary when the executable has already been created. The executable in this repository is only usable on linux machines. For other operating systems or in case of compatibility issues, please create the executable yourself!
 
 First, create a virtual python environment, using - for example - pipenv. Here, it might be useful to make pipenv use the .lock file, since installing dependencies with the Pipfile itself may lead to errors.
 
@@ -25,8 +29,10 @@ Then, create a .env file. It should contain the following environment variables:
 Create an executable with
 
 ```bash
-pyinstaller --onefile main.py
+pyinstaller --onefile Code/main.py
 ```
+
+The executable is then located in the dist folder.
 
 ## Running the program
 
@@ -61,7 +67,3 @@ or
 ```bash
 --force
 ```
-
-## What the program does
-
-The program uses the neo4j module to create a class Neo4jDB. While the main file does not use this functionality, the class does support writing to the database from queries. In the current implementaion, the login credentials are read from the .env file and used to establish a connection to the database. The data is then stored internally as a pandas dataframe and a csv is saved in the Data folder.
